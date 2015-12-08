@@ -15,7 +15,7 @@ module.exports = function (ctx, cb) {
         access_token_secret: ctx.data.ACCESS_TOKEN_SECRET,
     });
     
-    Async.map(ctx.body.commits, function (commit, next) {
+    Async.mapSeries(ctx.body.commits, function (commit, next) {
         var truncateCommitMessage = 140
             - HTTPS_URL_LENGTH
             - HASHTAG.length
