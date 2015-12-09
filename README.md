@@ -30,3 +30,6 @@ wt create -n tweethook \
 2. Click 'Add webhook'
 3. Paste the Webtask URL into the 'Payload URL' input and leave the rest at their default settings.
 4. Confirm by clicking the 'Add webhook' button and start pushing commits to Twitter!
+
+
+Presented at js-montreal 8 Dec 2015
